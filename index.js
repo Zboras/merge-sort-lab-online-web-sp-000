@@ -28,5 +28,5 @@ function findMinAndRemoveSorted(array) {
       sorted.push(currentMin)
     }
     return sorted.concat(firstHalf).concat(secondHalf)
-  }
+   }
   }
