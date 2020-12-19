@@ -13,10 +13,9 @@ function findMinAndRemoveSorted(array) {
 
   function merge(firstHalf, secondHalf){
     let sorted = []
-    while(firstHalf.length !== 0 && secondHalf.length !== 0){
-      let currentMin = findMinAndRemoveSorted(firstHalf, secondHalf)
+    while(firstHalf.length != 0 && secondHalf.length != 0){
+      let currentMin = findMinAndRemove(firstHalf, secondHalf)
       sorted.push(currentMin)
     }
     return sorted.concat(firstHalf).concat(secondHalf)
   }
-  
