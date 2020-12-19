@@ -11,6 +11,6 @@ function findMinAndRemoveSorted(array) {
   return min;
 }
 
-function merge(array) {
+function merge(array, array2) {
   
 }
