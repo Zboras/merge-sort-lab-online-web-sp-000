@@ -12,8 +12,7 @@ function findMinAndRemoveSorted(array) {
 }
 
   function merge(firstHalf, secondHalf){
-    let sorted = []
-    function findMinAndRemove(firstHalf, secondHalf){
+   function findMinAndRemove(firstHalf, secondHalf){
   let minfirstHalf = firstHalf[0]
   let minsecondHalf = secondHalf[0]
  
@@ -23,10 +22,10 @@ function findMinAndRemoveSorted(array) {
     return secondHalf.shift()
   }
 
-    while(firstHalf.length !== 0 && secondHalf.length !== 0){
+    let sorted = []
+    while(firstHalf.length != 0 && secondHalf.length != 0){
       let currentMin = findMinAndRemove(firstHalf, secondHalf)
       sorted.push(currentMin)
     }
     return sorted.concat(firstHalf).concat(secondHalf)
-   }
-  }
+  } }
